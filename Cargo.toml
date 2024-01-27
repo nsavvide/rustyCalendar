@@ -1,0 +1,20 @@
+[package]
+name = "rustyCalendar"
+version = "0.1.0"
+authors = ["Niels Savvides <niels.i.savvides@gmail.com>"]
+edition = "2021"
+description = "⚡️ Lightning-fast and minimal calendar command line using the Google Calendar API. Written in Rust 🦀"
+readme = "README.md"
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+hyper = "0.14"
+hyper-rustls = "0.22"
+google-calendar3 = "2.0"
+yup-oauth2 = "5.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4.33"
